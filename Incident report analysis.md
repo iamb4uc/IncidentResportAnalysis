@@ -1,0 +1,21 @@
+**Incident report analysis**
+
+**Instructions**
+
+As you continue through this course, you may use this template to record your findings after completing an activity or to take notes on what you've learned about a specific tool or concept. You can also use this chart as a way to practice applying the NIST framework to different situations you encounter.
+
+| | | | |
+| :---- | :---- |
+| Summary | A DDoS (Distributed Denial of Service) attack occurred in your organization, which is a multimedia company offering web design, graphic design, and social media marketing services. The attack involved a flood of ICMP packets overwhelming the network, causing a two-hour downtime. The incident was due to an unconfigured firewall that allowed the malicious actor to execute the attack. The response included blocking incoming ICMP packets, taking non-critical network services offline, and restoring critical services. |
+| Identify | **Type of Attack:** Distributed Denial of Service (DDoS) attack using ICMP packets. **Systems Affected:** Internal network services Firewall Critical network resources **Business Impact:** Two hours of network downtime. Interruption of internal services, affecting all departments. Potential loss of productivity and customer trust. **Root Cause:** Unconfigured firewall allowed ICMP packets through, enabling the attack. | 
+| Protect | **Action Plan: Firewall Configuration:** Implement a new firewall rule to limit the rate of incoming ICMP packets. **Access Controls:** Enable source IP address verification on the firewall to prevent spoofed IP addresses. **Employee Training:** Train IT staff on the importance of firewall configurations and regular updates. **Policy Update:** Revise existing security policies to ensure all firewall settings are reviewed and configured correctly. **Tool Implementation:** Install network monitoring software to detect abnormal traffic patterns and potential DDoS attacks. |  
+| Detect | **Monitoring Tools: IDS/IPS System:** Implement Intrusion Detection and Prevention Systems to filter out suspicious ICMP traffic. **Network Monitoring:** Use continuous network monitoring software to detect abnormal traffic patterns and trigger alerts. **SIEM System:** Deploy a Security Information and Event Management (SIEM) system to log and analyze security events, focusing on traffic spikes and ICMP packets. **Detection Process:** Establish a protocol for responding to alerts, including immediate review and action by the IT security team. |  
+| Respond | **Response Plan: Incident Containment:** Block all incoming ICMP packets and isolate affected systems from the network. **Communication:** Notify all stakeholders, including management and affected departments, about the incident and actions taken. **Forensic Analysis:** Analyze logs and network traffic to identify the source and method of the attack. **Mitigation Steps:** Strengthen firewall rules and apply patches or updates to close vulnerabilities. **Post-Incident Review:** Conduct a thorough review of the incident response to identify gaps and improve future response strategies. |  
+| Recover | **Recovery Plan: System Restoration:** Reconnect isolated systems after verifying they are secure and free from residual threats. **Data Recovery:** Ensure all data is intact, and restore any corrupted or lost data from backups. **Improvement Implementation:** Update recovery procedures to address the gaps identified during the incident. **Communication:** Inform all affected parties about the restoration of services and any changes in procedures. **Continuous Improvement:** Regularly test recovery processes and update as necessary to ensure quick and effective responses in future incidents. |  
+
+---
+
+Reflections/Notes:
+- The importance of properly configuring firewalls and continuous monitoring cannot be overstated. Regular security audits and employee training are crucial for maintaining network security.
+- Implement ongoing security awareness programs for all employees, including regular updates on new threats and vulnerabilities. Additionally, consider simulating DDoS attacks in a controlled environment to test the robustness of the incident response plan. |
+
